@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Item List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Item List</h1>
+        <form id="itemForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter Title" required>
+            
+            <label for="new">New:</label>
+            <input type="text" id="new" placeholder="Enter New" required>
+            
+            <button type="button" onclick="addItem()">Add</button>
+        </form>
+
+        <div id="itemList">
+            <!-- Rendered items will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
